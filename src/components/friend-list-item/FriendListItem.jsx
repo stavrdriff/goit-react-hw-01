@@ -3,15 +3,14 @@ import clsx from "clsx";
 
 export default function FriendListItem({ avatar, name, isOnline, id }) {
     return (
-        <div className={styles.friendListItem} id={id}>
+        <div className={styles.item} id={id}>
             <img
-                className={styles.friendListItemImage}
                 src={ avatar }
                 alt="Avatar"
                 width="48"
             />
-            <p className={styles.friendListItemName}>{ name }</p>
-            <p className={clsx(styles.friendListItemStatus, isOnline && styles.isActive)}>
+            <p className={styles.name}>{ name }</p>
+            <p className={clsx(styles.status, isOnline && styles.isActive)}>
                 {isOnline ? "Online" : "Offline"}
             </p>
         </div>

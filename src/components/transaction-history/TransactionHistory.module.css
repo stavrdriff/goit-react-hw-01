@@ -1,0 +1,46 @@
+.table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
+    border-collapse: collapse;
+}
+
+.head {
+    color: #fff;
+    font-weight: 700;
+    background-color: #2a2a2a;
+
+}
+
+.transaction {
+}
+
+.title {
+    width: calc(100% / 3);
+    padding: .5rem 0;
+    border: 1px solid #000;
+}
+
+.transaction:nth-child(even) {
+    background-color: #d3d3d3;
+}
+
+.type {
+    padding-left: 5%;
+    padding-block: .5rem;
+    border: 1px solid #000;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 10%;
+    }
+}
+
+.amount {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.currency {
+    text-align: center;
+    border: 1px solid #000;
+}

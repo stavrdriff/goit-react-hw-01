@@ -1,4 +1,4 @@
-.friendListItem {
+.item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,15 +6,13 @@
     text-align: center;
 }
 
-.friendListItemImage {}
-
-.friendListItemName {
+.name {
     margin: 0;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.friendListItemStatus {
+.status {
     margin: 0;
     color: #ff0706;
 }
