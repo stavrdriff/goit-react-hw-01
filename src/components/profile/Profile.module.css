@@ -1,7 +1,66 @@
-.userCard {}
+.userCard {
+    margin: 0 auto;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #212121;
+    border-radius: .5rem;
+    background-color: #fafafa;
+    text-align: center;
+    overflow: hidden;
+}
 
-.userImageContainer {}
+.userWrapper {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
 
-.userImage {}
+.userImage {
+    width: 100%;
+    max-width: 10rem;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
 
-.userStats {}
+.userName {
+    margin: .5rem 0;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.userTags {
+    margin: 0;
+    color: #808080;
+}
+
+.userStats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 2px solid #808080;
+    background-color: #d3d3d3;
+}
+
+.userStatsItem {
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.userStatsItem:not(:first-child) {
+    border-left: 1px solid #808080;
+}
+
+.userStatsItem:not(:last-child) {
+    border-right: 1px solid #808080;
+}
+
+.userStatsData {
+    font-weight: 700;
+}

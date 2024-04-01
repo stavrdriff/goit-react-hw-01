@@ -3,27 +3,28 @@ import styles from './Profile.module.css';
 export default function Profile( { name, tag, location, image, stats = {followers: 0, views: 0, likes: 0} } ) {
     return (
         <div className={styles.userCard}>
-            <div>
+            <div className={styles.userWrapper}>
                 <img
+                    className={styles.userImage}
                     src={ image }
                     alt="User avatar"
                 />
-                <p>{ name }</p>
-                <p>@{ tag }</p>
-                <p>{ location }</p>
+                <p className={styles.userName}>{ name }</p>
+                <p className={styles.userTags}>@{ tag }</p>
+                <p className={styles.userTags}>{ location }</p>
             </div>
-            <ul>
-                <li>
+            <ul className={styles.userStats}>
+                <li className={styles.userStatsItem}>
                     <span>Followers</span>
-                    <span>{ stats.followers }</span>
+                    <span className={styles.userStatsData}>{ stats.followers }</span>
                 </li>
-                <li>
+                <li className={styles.userStatsItem}>
                     <span>Views</span>
-                    <span>{ stats.views }</span>
+                    <span className={styles.userStatsData}>{ stats.views }</span>
                 </li>
-                <li>
+                <li className={styles.userStatsItem}>
                     <span>Likes</span>
-                    <span>{ stats.likes }</span>
+                    <span className={styles.userStatsData}>{ stats.likes }</span>
                 </li>
             </ul>
         </div>
