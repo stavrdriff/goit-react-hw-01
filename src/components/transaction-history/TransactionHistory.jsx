@@ -1,6 +1,6 @@
 import styles from "./TransactionHistory.module.css";
 
-export default function TransactionHistory({ transactions }) {
+export default function TransactionHistory({ transactions = [] }) {
     return (
         <table className={styles.table}>
             <thead className={styles.head}>
