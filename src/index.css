@@ -1,4 +1,9 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
 img {
     display: block;

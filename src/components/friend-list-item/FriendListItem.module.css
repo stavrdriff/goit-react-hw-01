@@ -1,0 +1,24 @@
+.friendListItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+}
+
+.friendListItemImage {}
+
+.friendListItemName {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.friendListItemStatus {
+    margin: 0;
+    color: #ff0706;
+}
+
+.isActive {
+    color: #2d902a;
+}
